@@ -107,9 +107,10 @@
                 <div class="col">
                     <center><h1>Estas aburrido?</h1></center>
                     <center><h2>En esta web podras encontrar todo tipo de actividades que te entretengan!</h2></center>
-                    <p>Todos tenemos dias en los que no sabemos que hacer del aburrimiento. Si estas en uno de esos dias has llegado al sitio adecuado.</p>
-                    <p>Aqui encontraras todo tipo de actividades que te pueden ayudar. Ademas, algunos links a paginas interesantes como "Netflix" si quieres ver una serie, "Renfe" si te apetece hacer un viaje y muchas mas. </p>
-                    </hr>
+                    <hr>
+                    <I><p>Todos tenemos dias en los que no sabemos que hacer del aburrimiento. Si estas en uno de esos dias has llegado al sitio adecuado.</p></I>
+                    <I><p>Aqui encontraras todo tipo de actividades que te pueden ayudar. Ademas, algunos links a paginas interesantes como "Netflix" si quieres ver una serie, "Renfe" si te apetece hacer un viaje y muchas mas. </p></I>
+                    <hr>
                 </div>
             </div>
         </div>
@@ -143,30 +144,43 @@
 
     <br>
     <br>
+
         <div class="row align-items-md-stretch">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="h-100 p-5 text-white bg-dark rounded-3">
+                    <h3>Primero elige un numero de participantes:</h3>
+                    <select class="form-select" aria-label="Default select example" id="select">
+                        <option selected>Selecciona</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                     <h2>Aqui tienes tu actividad: </h2>
-                    <button type="button" id= boton onclick="getActivity()" class="btn btn-info">Leer mas</button>
-                    <h3 id="activity"></h3>
+                    <button type="button" id= boton onclick="getAct()" class="btn btn-info">Click Me!</button>
+                    <br>
+                    <I><h4 id="activity"></h4></I>
+                    <br>
+                    <h4>Numero de participantes: </h4>
+                    <I><h4 id="participants"></h4></I>
+                    <br>
+                    <h4>Precio de la actividad:</h4>
+                    <I><h4 id="price"></h4></I>
+                    <br>
+                    <h4>Tipo de actividad:</h4>
+                    <I><h4 id="type"></h4></I>
+                    <br>
                     <button type="button" class="btn btn-success" id="buton2" onclick="getAct()">One more</button>
                 </div>
-            <div class="col-md-6">
-                <div class="h-100 p-5 bg-light border rounded-3">
-                    <h2>Subscribete con Nosotros</h2>
-                    <p>Te ha servido de ayuda nuestra web?</p>
-                    <p>Danos tu email y recibiras una actividad diaria, para que nunca estes aburrido.</p>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
-                    </div>
-                </div>
+            </div>
+            <div class="col-md-5">
+                <img src="https://childhood101.com/wp-content/uploads/2017/04/Printable-school-break-activity-poster-for-tweens.jpg" class="rounded float-right" alt="Fotografia Antonio Lorenzo Sierra">
+
             </div>
         </div>
     </div>
+
     <br>
     <br>
     <br>
@@ -180,7 +194,6 @@
 
 <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- <script src="./repaso.js"></script> -->
-<script src="index.js"></script>
 <footer class="bg-light text-center text-white">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
@@ -237,4 +250,5 @@
 </footer>
 
 </body>
+<script src="index.js"></script>
 </html>
