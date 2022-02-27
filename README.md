@@ -1,7 +1,7 @@
 # practica-4
 Practica-4
 <hr/> <br>
-<h1>Actividades Divertidas</h1>
+<h1>Actividades Para el Aburrimiento</h1>
 <p>Esta pagina es una web que te da una actividad para cuando estes aburrido. Las actividades son random y puedes seleccionar el numero de participantes que desees. </p>
 
 <br><h2>Pagina Principal </h2>
