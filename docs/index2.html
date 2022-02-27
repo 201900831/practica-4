@@ -68,18 +68,25 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Games</a>
+            <a class="navbar-brand" href="https://www.netflix.com/es-en/">Netflix</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="https://www.tripadvisor.com/Attractions-g187427-Activities-c49-Spain.html">Museums</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="info.html">Info</a>
+                        <a class="nav-link" href="https://www.renfe.com/es/es">Renfe</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.fungames.com/">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://livesport24.net/">Sports</a>
+                    </li>
+
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -98,8 +105,10 @@
         <div col="col" id="container">
             <div class="row">
                 <div class="col">
-                    <h1>Are you bored?</h1>
-                    <h2>Here are some activities that can entertain you!</h2>
+                    <center><h1>Estas aburrido?</h1></center>
+                    <center><h2>En esta web podras encontrar todo tipo de actividades que te entretengan!</h2></center>
+                    <p>Todos tenemos dias en los que no sabemos que hacer del aburrimiento. Si estas en uno de esos dias has llegado al sitio adecuado.</p>
+                    <p>Aqui encontraras todo tipo de actividades que te pueden ayudar. Ademas, algunos links a paginas interesantes como "Netflix" si quieres ver una serie, "Renfe" si te apetece hacer un viaje y muchas mas. </p>
                     </hr>
                 </div>
             </div>
@@ -137,16 +146,23 @@
         <div class="row align-items-md-stretch">
             <div class="col-md-6">
                 <div class="h-100 p-5 text-white bg-dark rounded-3">
-                    <h2>Informate aqui</h2>
-                    <p>Con nuestra atención personalizada podrás solicitar de forma rápida, cómoda y sencilla toda la información que necesites a través de diferentes vías de contacto sobre los productos y servicios que te tenemos para ti.</p>
-                    <a class="btn btn-primary" href="info.html" role="button">Pinche Aqui</a>                </div>
-            </div>
+                    <h2>Aqui tienes tu actividad: </h2>
+                    <button type="button" id= boton onclick="getActivity()" class="btn btn-info">Leer mas</button>
+                    <h3 id="activity"></h3>
+                    <button type="button" class="btn btn-success" id="buton2" onclick="getAct()">One more</button>
+                </div>
             <div class="col-md-6">
                 <div class="h-100 p-5 bg-light border rounded-3">
                     <h2>Subscribete con Nosotros</h2>
                     <p>Te ha servido de ayuda nuestra web?</p>
                     <p>Danos tu email y recibiras una actividad diaria, para que nunca estes aburrido.</p>
-                    <a class="btn btn-primary" href="clientes.html" role="button">Aqui Puedes</a>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,7 +179,62 @@
 </main>
 
 <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- <script src="./repaso.js"></script> -->
+<script src="index.js"></script>
+<footer class="bg-light text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a
+                    class="btn btn-primary btn-floating m-1"
+                    style="background-color: #3b5998;"
+                    href="https://es-es.facebook.com/telefonica/"
+                    role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
 
+            <!-- Twitter -->
+            <a
+                    class="btn btn-primary btn-floating m-1"
+                    style="background-color: #55acee;"
+                    href="https://twitter.com/telefonica/"
+                    role="button"
+            ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+                    class="btn btn-primary btn-floating m-1"
+                    style="background-color: #ac2bac;"
+                    href="https://www.instagram.com/telefonica/?hl=es"
+                    role="button"
+            ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+                    class="btn btn-primary btn-floating m-1"
+                    style="background-color: #0082ca;"
+                    href="https://www.linkedin.com/company/telef%C3%B3nica/?originalSubdomain=es"
+                    role="button"
+            ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Telefonica.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
 
 </body>
 </html>
